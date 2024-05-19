@@ -1,0 +1,117 @@
+.title {
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+.title-1 {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 72px;
+  border-radius: 16px;
+  height: 630px;
+}
+
+.t-1 {
+  height: 56px;
+  padding: 16px 20px;
+  background-color: #d9d9d9;
+  border-bottom: 1px solid #fff;
+  .left {
+    float: left;
+    font-weight: 800;
+    line-height: 24px;
+  }
+  .right {
+    float: right;
+    font-weight: 800;
+    line-height: 24px;
+  }
+}
+
+.box {
+  position: relative;
+  cursor: pointer;
+}
+
+/* 与复刻网页不同，第一个的图片没压缩，按比例缩放了 */
+.photo {
+  height: 572px;
+  background-size: cover;
+  .p1 {
+    overflow: hidden;
+    width: 30%;
+    img {
+      width: 1075px;
+      height: 572px;
+    }
+  }
+}
+
+.ul-1 {
+  li:nth-child(1) .photo {
+    background-image: url("../assets/images/1_hr.png");
+  }
+  
+  li:nth-child(2) .photo {
+    background-size: 1075px 572px;
+    background-image: url("../assets/images/2_hr.png");
+  }
+  
+  li:nth-child(3) .photo {
+    background-size: 1075px 572px;
+    background-image: url("../assets/images/3_hr.png");
+  }
+}
+
+.handle {
+  position: absolute;
+  top: 0px;
+  left: 30%;
+
+  .handle-line-1,
+  .handle-line-2 {
+    position: relative;
+    width: 2px;
+    height: 266px;
+    background-color: #fff;
+  }
+  .handle-circle {
+    position: relative;
+    top: -50%;
+    left: -50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    .left-arrow,
+    .right-arrow {
+      width: 9px;
+      height: 18px;
+    }    
+  }
+}
+
+.ul-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .title-1 {
+    width: 512px;
+    height: 568px;
+    .photo {
+      height: 512px;
+      background-image: url("../assets/images/hr_0018.png");
+      img {
+        width: 512px;
+        height: 512px;
+      }
+    }
+  }
+  .handle-line-1,
+  .handle-line-2 {
+    height: 236px;
+  }
+}

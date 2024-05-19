@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 16px/1 "Chivo", sans-serif;
+  font-weight: 400;
+  color: #121B24;
+}
+
+/* 去除a标签默认下划线,设置默认字体颜色 */
+a {
+  text-decoration: none;
+}
+
+/* 设置img的垂直对齐方式为居中对齐，去除img默认下间隙 */
+img {
+  vertical-align: middle;
+}
+
+/* 去除列表默认样式 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 双伪元素清除法 */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+
+@font-face {
+  font-family: "Chivo";
+  src: url("./assets/font/Chivo/Chivo-Regular.ttf");
+}
+
+/* 禁止选中那些可选中的元素，例如：图片 */
+html,body{
+  user-select: none;
+  -moz-user-select: none; /*火狐*/
+  -webkit-user-select: none; /*webkit浏览器*/
+  -ms-user-select: none; /*IE10*/
+}
+
+body {
+  margin: 0 auto;
+  width: 1075px;
+}
+
+h1 {
+  line-height: 1;
+  font-size: 65px;
+}
+
+h2 {
+  line-height: .97;
+  font-size: 45px;
+}
+
+h3 {
+  line-height: 1.1;
+  font-size: 27px;
+}
